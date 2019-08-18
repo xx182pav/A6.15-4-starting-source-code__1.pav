@@ -1,0 +1,58 @@
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  grid-row: 1 / 2;
+}
+
+.main {
+  grid-row: 2 / 3;
+}
+
+.buttons {
+  grid-row: 3 / 4;
+}
+
+#button-reload {
+  margin-left: -15px;
+  height: 100%;
+}
+
+.btn-block {
+  display: block;
+  height: 300px;
+  width: 100%;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  height: 100%;
+}
+
+.game-field {
+  background-color: orange;
+}
+
+.target {
+  background-color: green;
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+}
+
+.target h1 {
+  display: inline-block;
+}
+
+.miss {
+  background-color: red;
+}
+
+.fieldSize {
+  width: 2em;
+}

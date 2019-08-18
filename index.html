@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/game.css">
+  <link rel="stylesheet" href="">
+  <title>PWS A6 HW</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-wrapper">
+
+      <div class="header">
+        <div class="row">
+          <div class="col">
+            <h1>10 квадратов</h1>
+          </div>
+          <div class="buttons container-fluid">
+            <br>
+            <div class="row">
+              <div class="col-3">
+                <button id="button-reload" class="btn btn-primary btn-block d-none">Играть заново</button>
+              </div>
+
+              <div class="col">
+                <div id="win-message" class="d-none">
+                  <!-- TODO: можно добавить красные квадратики с отрицательным весом и делать счёт попаданий в конце как разницу очков за попадание минус штрафные -->
+                  <h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд</h2>
+                  <h3>Количество промахов - <span id='missies'></span></h3>
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div id='game-conditions'>
+          <h3>
+            Ваша задача как можно быстрее найти 10 зеленых квадратов!
+          </h3>
+          <h4>
+            В игровом поле
+            <input type="text" class="h4 fieldSize" id="x" value="6">
+            на
+            <input type="text" class="h4 fieldSize" id="y" value="6">
+            клеток.
+          </h4>
+        </div>
+        <button id="button-start" class="btn btn-primary btn-block">СТАРТ</button>
+        <div class="grid-wrapper gameField"></div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/game.js"></script>
+</body>
+
+</html>
